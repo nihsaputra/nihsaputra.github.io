@@ -130,6 +130,12 @@ table td .gambarskil {
 
 .custom-about .container .row .bgcontent p {
   color: #eeedff;
+  margin-bottom: 0;
+}
+
+.custom-about .container .row .bgcontent .gambarskil {
+  width: 4em;
+  margin-bottom: 1em;
 }
 
 .custom-about .container .row .bgcontent td {

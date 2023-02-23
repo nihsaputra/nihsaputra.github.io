@@ -1,0 +1,275 @@
+//variable
+$oneColor : #736fbc;
+$twoColor : #ff5e63;
+$threeColor : #f9cc6f;
+$fourColor : #3d9fb8;
+$fiveColor : #eeedff;
+
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+//Mixin
+@mixin tombol {
+    background-color: $twoColor;
+    color: $fiveColor;
+    border-radius: 2em; //kebulatan
+    border: 1px solid transparent;
+    padding: 0.5em 2em; //pading atas bawah 0.5 , kanan kiri 2
+    text-decoration: none;
+    transition: 0.3s ease; //transisi tombol
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+
+    //ketika di sentuh akan berganti warna
+    &:hover {
+        background-color: $fiveColor;
+        color: $twoColor;
+        border: 1px solid $twoColor;
+
+    }
+}
+
+//style
+// NAVBAR
+.custom-nav {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900; //ketebalan
+            color: $oneColor;
+        }
+    }
+}
+
+#navbarNav {
+    .navbar-nav {
+        .nav-item {
+
+            .nav-link {
+                font-family: 'Montserrat', sans-serif;
+                color: $oneColor;
+                font-weight: 500; //ketebalan
+                text-transform: uppercase; //menjadikan font huruf besar semua
+                margin-left: 2em; //margin
+
+                &:hover {
+                    color: $fiveColor;
+                    background-color: $oneColor;
+                    transition: 0.3s ease;
+                }
+
+            }
+
+        }
+    }
+}
+
+// HERO
+.custom-hero {
+    margin-top: 2.5em;
+    padding-bottom: 5em;
+
+    .row {
+        .col-md-4 {
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                color: $oneColor;
+                font-weight: 1000;
+            }
+
+            span {
+                color: $threeColor;
+                background-color: $oneColor;
+            }
+
+            h5 {
+                font-family: 'Montserrat', sans-serif;
+                color: $oneColor;
+            }
+
+            p {
+                font-family: 'Montserrat', sans-serif;
+                color: $fourColor;
+            }
+        }
+
+        .col-md-8 {
+            padding-top: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+
+            img {
+                width: 100%
+            }
+        }
+    }
+}
+
+//tombol
+.custom-btn {
+    @include tombol;
+}
+
+
+//table
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+
+    th {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    td {
+        .gambarskil {
+            width: 4em;
+        }
+    }
+
+}
+
+//profile
+.custom-about {
+    padding-top: 6em;
+    font-family: 'Montserrat', sans-serif;
+
+    .container {
+        .row {
+            .col {
+                h2 {
+                    color: $oneColor;
+                    font-weight: 500;
+                }
+            }
+
+            .bg {
+                h5 {
+                    color: $fiveColor;
+                }
+
+                .bgheadcontent {
+                    background-color: $twoColor;
+                    padding-top: 0.6em;
+                    padding-bottom: 0.1em;
+                    border-radius: 0em 3em 0em 0em;
+                    margin-bottom: 0.2em;
+                }
+            }
+
+            .bgcontent {
+                background-color: $oneColor;
+                border-radius: 0em 0em 3em 3em;
+                padding: 1em 1em;
+
+                p {
+                    color: $fiveColor;
+                }
+
+                td {
+                    color: $fiveColor;
+                    padding-left: 1em;
+                    padding-right: 1em;
+
+                }
+
+            }
+        }
+    }
+}
+
+//services
+.custom-services {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8em;
+
+    .row {
+        .col {
+            h2 {
+                color: $oneColor;
+                font-weight: 500;
+            }
+        }
+
+        .col-md-4 {
+            img {
+                height: 5em;
+            }
+
+            h5 {
+                margin-top: 1em;
+                color: $twoColor;
+                font-weight: 500;
+            }
+
+            p {
+                color: $fourColor;
+            }
+        }
+    }
+}
+
+//portfolio
+.custom-portfolio {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10em;
+    padding-top: 9em;
+
+    .row {
+        .col {
+            h2 {
+                color: $oneColor;
+                font-weight: 500;
+                padding-bottom: 1em;
+            }
+        }
+
+        .col-md-4 {
+            .name-portfolio {
+                background-color: $oneColor;
+                margin-top: 0.2em;
+                padding-top: 0.5em;
+                padding-bottom: 0.3em;
+                border-radius: 0em 0em 0em 3em;
+
+                h5 {
+                    color: $fiveColor;
+                    font-weight: 500;
+                }
+            }
+
+            img {
+                border: solid $twoColor 0.5em;
+                border-radius: 0em 3em 0em 0em;
+            }
+        }
+    }
+}
+
+
+//contact
+.custom-contact {
+    background-color: $fiveColor;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .container {
+        .row {
+            .col {
+                a {
+                    padding-left: 3em;
+                    color: $twoColor;
+                }
+            }
+        }
+    }
+}

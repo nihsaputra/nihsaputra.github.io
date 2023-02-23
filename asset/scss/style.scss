@@ -170,22 +170,28 @@ table {
                 background-color: $oneColor;
                 border-radius: 0em 0em 3em 3em;
                 padding: 1em 1em;
+                margin-left: 0;
+                margin-left: 0;
 
                 p {
                     color: $fiveColor;
                     margin-bottom: 0;
                 }
 
-                .gambarskil {
-                    width: 4em;
-                    margin-bottom: 1em;
+                .row {
+                    .col-3 {
+                        p {
+                            color: $fiveColor;
+                            margin-bottom: 0;
+                            font-size: small;
+                        }
+                    }
                 }
 
-                td {
-                    color: $fiveColor;
-                    padding-left: 1em;
-                    padding-right: 1em;
 
+                .gambarskil {
+                    width: 3.5em;
+                    margin-bottom: 1em;
                 }
 
             }

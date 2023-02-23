@@ -126,6 +126,8 @@ table td .gambarskil {
   background-color: #736fbc;
   border-radius: 0em 0em 3em 3em;
   padding: 1em 1em;
+  margin-left: 0;
+  margin-left: 0;
 }
 
 .custom-about .container .row .bgcontent p {
@@ -133,15 +135,15 @@ table td .gambarskil {
   margin-bottom: 0;
 }
 
-.custom-about .container .row .bgcontent .gambarskil {
-  width: 4em;
-  margin-bottom: 1em;
+.custom-about .container .row .bgcontent .row .col-3 p {
+  color: #eeedff;
+  margin-bottom: 0;
+  font-size: small;
 }
 
-.custom-about .container .row .bgcontent td {
-  color: #eeedff;
-  padding-left: 1em;
-  padding-right: 1em;
+.custom-about .container .row .bgcontent .gambarskil {
+  width: 3.5em;
+  margin-bottom: 1em;
 }
 
 .custom-services {

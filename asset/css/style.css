@@ -200,6 +200,26 @@ table td .gambarskil {
   border-radius: 0em 3em 0em 0em;
 }
 
+.custom-portfolio .row .col-md-8 .name-portfolio {
+  background-color: #736fbc;
+  margin-top: 0.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+  border-radius: 0em 0em 3em 3em;
+}
+
+.custom-portfolio .row .col-md-8 .name-portfolio h5 {
+  color: #eeedff;
+  font-weight: 500;
+}
+
+.custom-portfolio .row .col-md-8 img {
+  border: solid #ff5e63 0.5em;
+  border-radius: 0em 0em 0em 0em;
+}
+
+
+
 .custom-contact {
   background-color: #eeedff;
   padding-top: 2em;
